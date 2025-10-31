@@ -15,12 +15,22 @@ See the result of this script in action:
 
 The script expects videos in the following structure:
 ```
-DIR/
-├── Gemini/
-│   └── video_name.mp4    (8s, 1280x720, horizontal)
-└── Sora/
-    └── video_name.mp4    (10s, 704x1280, vertical)
+project/
+├── join_videos.sh
+├── DIR1/
+│   ├── Gemini/
+│   │   └── video_name.mp4    (8s, 1280x720, horizontal)
+│   └── Sora/
+│       └── video_name.mp4    (10s, 704x1280, vertical)
+├── DIR2/
+│   ├── Gemini/
+│   │   └── video_name.mp4
+│   └── Sora/
+│       └── video_name.mp4
+└── ...
 ```
+
+The script should be placed at the same level as the directories containing Gemini/ and Sora/ subdirectories.
 
 ## Usage
 
